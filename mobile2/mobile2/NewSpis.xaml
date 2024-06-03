@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobile2.NewSpis">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame Background="#547d52" Padding="10">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="63"/>
+                        <ColumnDefinition Width="*"/>
+
+                    </Grid.ColumnDefinitions>
+                    <Button Text="↩" TextColor="White" FontSize="40" HorizontalOptions="Start" VerticalOptions="Center"  BackgroundColor="Transparent" Clicked="ButtonClicked"  Grid.Column="0"/>
+                    <Label Text="Создание списка" TextColor="White" FontSize="22" FontAttributes="Bold" Margin="15,0,0,15" VerticalOptions="End" Grid.Column="1"/>
+
+                </Grid>
+            </Frame>
+            <Entry x:Name="NameEntry" Placeholder="Название" BackgroundColor="#e8fae9" Margin="0,150, 0, 0"/>
+            <DatePicker x:Name="DateEntry"  Format="dd.MM.yyyy" BackgroundColor="#e8fae9" Margin="0,50,0,10"/>
+            <Button Text="Создать список" x:Name="button1" Margin="20,187,20,0" BackgroundColor="#547d52" TextColor="White" FontSize="14" Clicked="Save"   CornerRadius="40" HeightRequest="50" WidthRequest="20"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
